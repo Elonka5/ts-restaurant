@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkts_restaurant=self.webpackChunkts_restaurant||[]).push([[245],{245:(t,s,a)=>{a.r(s),a.d(s,{default:()=>r});a(791);var e=a(184);const r=()=>(0,e.jsx)("div",{children:"Contact"})}}]);
+//# sourceMappingURL=245.ccdd12b3.chunk.js.map
