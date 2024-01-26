@@ -1,3 +1,4 @@
+@import '../src/services/stylesheet/fonts.css';
 @import 'modern-normalize';
 
 body {
@@ -7,9 +8,47 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  min-height: 100vh;
+  font-family: Rufina, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #121417;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+button,
+Link {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
