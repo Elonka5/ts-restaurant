@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ts-restaurant/static/css/main.221ce4ba.css",
+    "main.css": "/ts-restaurant/static/css/main.5c406a98.css",
     "main.js": "/ts-restaurant/static/js/main.7bd96602.js",
     "static/js/293.d615e548.chunk.js": "/ts-restaurant/static/js/293.d615e548.chunk.js",
     "static/js/921.a96bd012.chunk.js": "/ts-restaurant/static/js/921.a96bd012.chunk.js",
@@ -8,9 +8,13 @@
     "static/js/26.7352a1c4.chunk.js": "/ts-restaurant/static/js/26.7352a1c4.chunk.js",
     "static/js/245.ccdd12b3.chunk.js": "/ts-restaurant/static/js/245.ccdd12b3.chunk.js",
     "static/js/787.caa874fe.chunk.js": "/ts-restaurant/static/js/787.caa874fe.chunk.js",
+    "static/media/Lato-Regular.ttf": "/ts-restaurant/static/media/Lato-Regular.9d883d540ee2b4de8024.ttf",
+    "static/media/Lato-Bold.ttf": "/ts-restaurant/static/media/Lato-Bold.636be8de934918e38ed9.ttf",
+    "static/media/Rufina-Bold.ttf": "/ts-restaurant/static/media/Rufina-Bold.02cec62288c21217bddd.ttf",
+    "static/media/Rufina-Regular.ttf": "/ts-restaurant/static/media/Rufina-Regular.959d561d064c27bff867.ttf",
     "static/media/Logo_white.svg": "/ts-restaurant/static/media/Logo_white.d3f1cec79a80344b660c02f9d0af9cca.svg",
     "index.html": "/ts-restaurant/index.html",
-    "main.221ce4ba.css.map": "/ts-restaurant/static/css/main.221ce4ba.css.map",
+    "main.5c406a98.css.map": "/ts-restaurant/static/css/main.5c406a98.css.map",
     "main.7bd96602.js.map": "/ts-restaurant/static/js/main.7bd96602.js.map",
     "293.d615e548.chunk.js.map": "/ts-restaurant/static/js/293.d615e548.chunk.js.map",
     "921.a96bd012.chunk.js.map": "/ts-restaurant/static/js/921.a96bd012.chunk.js.map",
@@ -20,7 +24,7 @@
     "787.caa874fe.chunk.js.map": "/ts-restaurant/static/js/787.caa874fe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.221ce4ba.css",
+    "static/css/main.5c406a98.css",
     "static/js/main.7bd96602.js"
   ]
 }
