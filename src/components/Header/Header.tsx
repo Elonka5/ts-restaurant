@@ -1,13 +1,23 @@
 import { Link } from 'react-router-dom';
-import { Logo } from './HeaderStyled';
+import { HeaderWrapper, Logo } from './HeaderStyled';
+import { ReactComponent as BtnIcon } from '../../assets/images/svg/NaviOpen.svg';
 
 const Header = () => {
   return (
-    <div style={{ backgroundColor: '#233000' }}>
-      <Link to="/">
-        <Logo />
-      </Link>
-    </div>
+    <HeaderWrapper>
+      <div>
+        <Link to="/">
+          <Logo />
+        </Link>
+        <button>
+          <BtnIcon />
+        </button>
+      </div>
+      <div>
+        <Link to="tel:+86852346000">+86 852 346 000</Link>
+        <Link to="/#reservations">Reservations</Link>
+      </div>
+    </HeaderWrapper>
   );
 };
 

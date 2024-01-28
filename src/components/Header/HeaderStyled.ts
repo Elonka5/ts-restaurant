@@ -2,6 +2,16 @@ import styled from 'styled-components';
 import { ReactComponent as LogoIcon } from '../../assets/images/svg/Logo_white.svg';
 
 export const Logo = styled(LogoIcon)`
-  width: ${({ theme }) => theme.spacing(7)};
-  height: ${({ theme }) => theme.spacing(7)};
+  width: ${({ theme }) => theme.spacing(76.75)};
+  height: ${({ theme }) => theme.spacing(28.75)};
+`;
+
+export const HeaderWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  padding: ${({ theme }) =>
+    `${theme.spacing(11.5)} ${theme.spacing(34.5)} ${theme.spacing(
+      11.5
+    )} ${theme.spacing(29.5)} `};
+  background-color: ${({ theme }) => theme.colors.primaryBackground};
 `;
