@@ -17,11 +17,11 @@ root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <Provider store={store}>
-        {/* <PersistGate loading={null} persistor={persistedStore}> */}
-        <BrowserRouter basename="/ts-restaurant">
-          <App />
-        </BrowserRouter>
-        {/* </PersistGate> */}
+        <PersistGate loading={null} persistor={persistedStore}>
+          <BrowserRouter basename="/ts-restaurant">
+            <App />
+          </BrowserRouter>
+        </PersistGate>
       </Provider>
     </ThemeProvider>
   </React.StrictMode>
