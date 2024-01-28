@@ -2,6 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { menuReducer } from './Menu/MenuSlice';
 import {
   persistStore,
+  persistReducer,
   FLUSH,
   REHYDRATE,
   PAUSE,
@@ -9,10 +10,18 @@ import {
   PURGE,
   REGISTER,
 } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 
-export const store = configureStore({
+const persistUserConfig = {
+  key: 'root',
+  storage,
+};
+
+const persistedRoot = persistReducer(persistUserConfig, menuReducer);
+
+const store = configureStore({
   reducer: {
-    menu: menuReducer,
+    menu: persistedRoot,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
@@ -23,4 +32,7 @@ export const store = configureStore({
 });
 
 export type RootState = ReturnType<typeof store.getState>;
+
 export const persistedStore = persistStore(store);
+
+export default store;

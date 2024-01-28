@@ -7,7 +7,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './services/styles/theme';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { persistedStore, store } from './redux/store';
+import store, { persistedStore } from './redux/store';
 import { PersistGate } from 'redux-persist/integration/react';
 
 const root = ReactDOM.createRoot(

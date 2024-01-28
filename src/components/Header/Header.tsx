@@ -17,6 +17,12 @@ const Header = () => {
         <Link to="tel:+86852346000">+86 852 346 000</Link>
         <Link to="/#reservations">Reservations</Link>
       </div>
+      <div>
+        <Link to="about">About</Link>
+        <Link to="blogs">Blogs</Link>
+        <Link to="contact">Contact</Link>
+        <Link to="menu">Menu</Link>
+      </div>
     </HeaderWrapper>
   );
 };
