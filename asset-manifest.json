@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ts-restaurant/static/css/main.5c406a98.css",
-    "main.js": "/ts-restaurant/static/js/main.ebf20654.js",
+    "main.js": "/ts-restaurant/static/js/main.bfd0c4be.js",
     "static/js/293.d615e548.chunk.js": "/ts-restaurant/static/js/293.d615e548.chunk.js",
     "static/js/921.a96bd012.chunk.js": "/ts-restaurant/static/js/921.a96bd012.chunk.js",
     "static/js/558.06f72499.chunk.js": "/ts-restaurant/static/js/558.06f72499.chunk.js",
@@ -16,7 +16,7 @@
     "index.html": "/ts-restaurant/index.html",
     "static/media/NaviOpen.svg": "/ts-restaurant/static/media/NaviOpen.fc11dac5885e7715a1d1e9e349a55305.svg",
     "main.5c406a98.css.map": "/ts-restaurant/static/css/main.5c406a98.css.map",
-    "main.ebf20654.js.map": "/ts-restaurant/static/js/main.ebf20654.js.map",
+    "main.bfd0c4be.js.map": "/ts-restaurant/static/js/main.bfd0c4be.js.map",
     "293.d615e548.chunk.js.map": "/ts-restaurant/static/js/293.d615e548.chunk.js.map",
     "921.a96bd012.chunk.js.map": "/ts-restaurant/static/js/921.a96bd012.chunk.js.map",
     "558.06f72499.chunk.js.map": "/ts-restaurant/static/js/558.06f72499.chunk.js.map",
@@ -26,6 +26,6 @@
   },
   "entrypoints": [
     "static/css/main.5c406a98.css",
-    "static/js/main.ebf20654.js"
+    "static/js/main.bfd0c4be.js"
   ]
 }
