@@ -9,6 +9,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store, { persistedStore } from './redux/store';
 import { PersistGate } from 'redux-persist/integration/react';
+// require('dotenv').config();
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
