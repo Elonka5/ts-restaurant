@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/ts-restaurant/static/css/main.5c406a98.css",
-    "main.js": "/ts-restaurant/static/js/main.5bc6b67d.js",
-    "static/js/11.ada10ab6.chunk.js": "/ts-restaurant/static/js/11.ada10ab6.chunk.js",
+    "main.js": "/ts-restaurant/static/js/main.22a8e26b.js",
+    "static/js/887.82869527.chunk.js": "/ts-restaurant/static/js/887.82869527.chunk.js",
     "static/js/921.22288db9.chunk.js": "/ts-restaurant/static/js/921.22288db9.chunk.js",
     "static/js/558.19bcffe0.chunk.js": "/ts-restaurant/static/js/558.19bcffe0.chunk.js",
     "static/js/26.8f37a3db.chunk.js": "/ts-restaurant/static/js/26.8f37a3db.chunk.js",
     "static/js/245.a2d3ed71.chunk.js": "/ts-restaurant/static/js/245.a2d3ed71.chunk.js",
     "static/js/787.caa874fe.chunk.js": "/ts-restaurant/static/js/787.caa874fe.chunk.js",
+    "static/css/345.3af21e9d.chunk.css": "/ts-restaurant/static/css/345.3af21e9d.chunk.css",
+    "static/js/345.8a972a76.chunk.js": "/ts-restaurant/static/js/345.8a972a76.chunk.js",
     "static/media/cook.png": "/ts-restaurant/static/media/cook.3f84487be3a9b5963334.png",
     "static/media/menu_background@2x.png": "/ts-restaurant/static/media/menu_background@2x.51f03e85a6c6484356d6.png",
     "static/media/cook_webp@2x.webp": "/ts-restaurant/static/media/cook_webp@2x.a0678895e5f343a842c2.webp",
@@ -41,22 +43,28 @@
     "static/media/spices2_webp.webp": "/ts-restaurant/static/media/spices2_webp.daf5bff22a743a4f1b68.webp",
     "static/media/spices3_webp.webp": "/ts-restaurant/static/media/spices3_webp.63dca2d93e03af8b61bd.webp",
     "static/media/spices1_webp.webp": "/ts-restaurant/static/media/spices1_webp.a7a9c02a1bf11044656e.webp",
+    "static/media/Mint.svg": "/ts-restaurant/static/media/Mint.673427b9b8f0fe66fe7cc4932288c2af.svg",
     "static/media/Leaf_right.svg": "/ts-restaurant/static/media/Leaf_right.5708c43ff0851b307528c017b1f38d06.svg",
     "static/media/Leaf.svg": "/ts-restaurant/static/media/Leaf.041a2d226d10204e2ff731398fd21864.svg",
     "static/media/Logo_white.svg": "/ts-restaurant/static/media/Logo_white.d3f1cec79a80344b660c02f9d0af9cca.svg",
+    "static/media/Icon_carrot.svg": "/ts-restaurant/static/media/Icon_carrot.b6b3f8cc5e96df0e529f5206a007cd9f.svg",
+    "static/media/Icon_fish.svg": "/ts-restaurant/static/media/Icon_fish.a13570f6657d82f3127a0f30f0bfe773.svg",
+    "static/media/Icon_lemon.svg": "/ts-restaurant/static/media/Icon_lemon.977f6dfa847036c9e2605fa6597356eb.svg",
     "index.html": "/ts-restaurant/index.html",
     "static/media/NaviOpen.svg": "/ts-restaurant/static/media/NaviOpen.fc11dac5885e7715a1d1e9e349a55305.svg",
     "main.5c406a98.css.map": "/ts-restaurant/static/css/main.5c406a98.css.map",
-    "main.5bc6b67d.js.map": "/ts-restaurant/static/js/main.5bc6b67d.js.map",
-    "11.ada10ab6.chunk.js.map": "/ts-restaurant/static/js/11.ada10ab6.chunk.js.map",
+    "main.22a8e26b.js.map": "/ts-restaurant/static/js/main.22a8e26b.js.map",
+    "887.82869527.chunk.js.map": "/ts-restaurant/static/js/887.82869527.chunk.js.map",
     "921.22288db9.chunk.js.map": "/ts-restaurant/static/js/921.22288db9.chunk.js.map",
     "558.19bcffe0.chunk.js.map": "/ts-restaurant/static/js/558.19bcffe0.chunk.js.map",
     "26.8f37a3db.chunk.js.map": "/ts-restaurant/static/js/26.8f37a3db.chunk.js.map",
     "245.a2d3ed71.chunk.js.map": "/ts-restaurant/static/js/245.a2d3ed71.chunk.js.map",
-    "787.caa874fe.chunk.js.map": "/ts-restaurant/static/js/787.caa874fe.chunk.js.map"
+    "787.caa874fe.chunk.js.map": "/ts-restaurant/static/js/787.caa874fe.chunk.js.map",
+    "345.3af21e9d.chunk.css.map": "/ts-restaurant/static/css/345.3af21e9d.chunk.css.map",
+    "345.8a972a76.chunk.js.map": "/ts-restaurant/static/js/345.8a972a76.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c406a98.css",
-    "static/js/main.5bc6b67d.js"
+    "static/js/main.22a8e26b.js"
   ]
 }
