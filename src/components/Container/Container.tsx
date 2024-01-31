@@ -6,7 +6,7 @@ type Props = {
   variant: string;
 };
 
-const Container = ({ children, variant }: Props) => {
+const Container = ({ children, variant = 'other' }: Props) => {
   return <ContainerStyled $variant={variant}>{children}</ContainerStyled>;
 };
 

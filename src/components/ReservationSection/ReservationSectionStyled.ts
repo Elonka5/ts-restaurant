@@ -1,0 +1,21 @@
+import styled from 'styled-components';
+import mintsvg from '../../assets/images/svg/Mint.svg';
+
+export const ReservationSect = styled.section`
+  background-color: ${({ theme }) => theme.colors.lightOlive};
+  padding-top: 214px;
+  padding-bottom: 174px;
+  background-image: url(${mintsvg});
+  background-repeat: no-repeat;
+  background-position: top 50px left 159px;
+`;
+
+export const ReservWrap = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  p {
+    color: ${({ theme }) => theme.colors.grey};
+  }
+`;
