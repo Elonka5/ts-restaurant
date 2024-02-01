@@ -1,7 +1,45 @@
+import { ErrorMessage, Field } from 'formik';
 import styled, { createGlobalStyle } from 'styled-components';
 
 export const StyledDateWrapper = styled.div`
   position: relative;
+`;
+
+export const StyledInput = styled(Field)<{ $error?: string }>`
+  display: flex;
+  padding: ${({ theme }) => `${theme.spacing(4)} ${theme.spacing(4.5)}`};
+  justify-content: center;
+  align-items: center;
+  border-radius: ${({ theme }) => theme.radii.button};
+  border: 1px solid
+    ${({ theme, $error }) =>
+      $error ? theme.colors.red : theme.colors.primaryGreen};
+
+  width: ${({ theme }) => theme.spacing(62)};
+  appearance: none;
+  outline: none;
+
+  ::placeholder {
+    color: ${({ $error, theme }) =>
+      $error ? theme.colors.primaryGreen : theme.colors.red};
+    transition: color 0.3s ease-in-out;
+  }
+`;
+
+export const WrapperInput = styled.div`
+  position: relative;
+  margin-bottom: ${({ theme }) => theme.spacing(4.5)};
+`;
+
+export const StyledError = styled(ErrorMessage)`
+  position: absolute;
+  top: ${({ theme }) => theme.spacing(12.5)};
+  left: ${({ theme }) => theme.spacing(1)};
+  color: ${({ theme }) => theme.colors.red};
+  display: block;
+  font-size: ${({ theme }) => theme.fontSizes.xs};
+  line-height: 18px;
+  width: ${({ theme }) => theme.spacing(55)};
 `;
 
 export const CalendarGlobalStyles = createGlobalStyle`

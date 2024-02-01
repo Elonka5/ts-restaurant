@@ -8,6 +8,7 @@ export const theme = {
     grey: '#4D4D4D',
     lightGrey: '#B0B0B0',
     white: '#fff',
+    red: '#ef5050',
   },
 
   spacing: (value: number) => `${4 * value}px`,

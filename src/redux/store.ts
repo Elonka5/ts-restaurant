@@ -11,6 +11,7 @@ import {
   REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
+import { usersReducer } from './User/UserSlice';
 
 const persistUserConfig = {
   key: 'root',
@@ -22,6 +23,7 @@ const persistedRoot = persistReducer(persistUserConfig, menuReducer);
 const store = configureStore({
   reducer: {
     menu: persistedRoot,
+    user: usersReducer,
   },
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
@@ -32,6 +34,7 @@ const store = configureStore({
 });
 
 export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
 
 export const persistedStore = persistStore(store);
 
