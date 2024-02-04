@@ -1,13 +1,3 @@
-// import styled from 'styled-components';
-
-// export const StyledContainer = styled.div`
-//   margin-left: auto;
-//   margin-right: auto;
-//   min-width: ${({ theme }) => theme.spacing(80)};
-//   padding-left: ${({ theme }) => theme.spacing(34.5)};
-//   padding-right: ${({ theme }) => theme.spacing(34.5)};
-// `;
-
 import styled, { css } from 'styled-components';
 
 interface ContainerStyledProps {

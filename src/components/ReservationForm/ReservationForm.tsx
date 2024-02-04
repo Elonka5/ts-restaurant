@@ -2,16 +2,20 @@ import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import {
   CalendarGlobalStyles,
+  FormWrapper,
+  StyledBtn,
   StyledDateWrapper,
   StyledError,
-  StyledInput,
+  StyledSelect,
   WrapperInput,
+  WrapperInputs,
 } from './ReservationFormStyled';
 import 'react-datepicker/dist/react-datepicker.css';
 import { validationBooking } from '../../helpers/schemas';
 import { sendUserReservation } from '../../redux/User/UserThunk';
-import { Form, Formik } from 'formik';
+import { Formik } from 'formik';
 import { useAppDispatch } from '../../hook';
+import Input from '../Input/Input';
 
 interface ReservationFormValues {
   firstName: string;
@@ -64,84 +68,88 @@ const ReservationForm: React.FC = () => {
     >
       {({ errors, touched }) => {
         return (
-          <Form>
-            <WrapperInput>
-              <StyledInput
-                type="text"
-                id="firstName"
-                name="firstName"
-                placeholder="First Name"
-                $error={errors.firstName && touched.firstName ? 'true' : ''}
-              />
-              <StyledError name="firstName" component="span" />
-            </WrapperInput>
-            <WrapperInput>
-              <StyledInput
-                type="text"
-                id="lastName"
-                name="lastName"
-                placeholder="Last Name"
-                $error={errors.lastName && touched.lastName ? 'true' : ''}
-              />
-              <StyledError name="lastName" component="span" />
-            </WrapperInput>
+          <FormWrapper>
+            <WrapperInputs>
+              <WrapperInput>
+                <Input
+                  variant="primary"
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="First Name"
+                  error={errors.firstName && touched.firstName ? 'true' : ''}
+                />
+                <StyledError name="firstName" component="span" />
+              </WrapperInput>
+              <WrapperInput>
+                <Input
+                  variant="primary"
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Last Name"
+                  error={errors.lastName && touched.lastName ? 'true' : ''}
+                />
+                <StyledError name="lastName" component="span" />
+              </WrapperInput>
+            </WrapperInputs>
 
             <WrapperInput>
-              <StyledInput
+              <Input
+                variant="secondary"
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Email"
-                $error={errors.email && touched.email ? 'true' : ''}
+                error={errors.email && touched.email ? 'true' : ''}
               />
               <StyledError name="email" component="span" />
             </WrapperInput>
 
             <WrapperInput>
-              <StyledInput
+              <Input
+                variant="secondary"
                 type="tel"
                 id="phone"
                 name="phone"
                 placeholder="Phone"
-                $error={errors.phone && touched.phone ? 'true' : ''}
+                error={errors.phone && touched.phone ? 'true' : ''}
               />
               <StyledError name="phone" component="span" />
             </WrapperInput>
+            <WrapperInputs>
+              <StyledDateWrapper>
+                <DatePicker
+                  selected={selectedDate}
+                  onChange={(date: Date) => setSelectedDate(date)}
+                  minDate={new Date()}
+                  dateFormat="dd/MM/yyyy"
+                />
+                <CalendarGlobalStyles />
+              </StyledDateWrapper>
 
-            <StyledDateWrapper>
               <DatePicker
-                selected={selectedDate}
-                onChange={(date: Date) => setSelectedDate(date)}
-                minDate={new Date()}
-                dateFormat="dd/MM/yyyy"
+                selected={selectedTime}
+                onChange={(date: Date) => setSelectedTime(date)}
+                showTimeSelect
+                showTimeSelectOnly
+                timeIntervals={30}
+                dateFormat="h:mm aa"
+                timeCaption="Time"
+                minTime={new Date()}
+                maxTime={new Date(new Date().setHours(21, 0, 0, 0))}
               />
-              <CalendarGlobalStyles />
-            </StyledDateWrapper>
+            </WrapperInputs>
+            <StyledSelect id="numberOfPeople" name="numberOfPeople">
+              {[1, 2, 3, 4, 5, 6].map(num => (
+                <option key={num} value={num}>
+                  {num}
+                </option>
+              ))}
+            </StyledSelect>
 
-            <DatePicker
-              selected={selectedTime}
-              onChange={(date: Date) => setSelectedTime(date)}
-              showTimeSelect
-              showTimeSelectOnly
-              timeIntervals={30}
-              dateFormat="h:mm aa"
-              timeCaption="Time"
-              minTime={new Date()}
-              maxTime={new Date(new Date().setHours(21, 0, 0, 0))}
-            />
-
-            <div>
-              <select id="numberOfPeople" name="numberOfPeople">
-                {[1, 2, 3, 4, 5, 6].map(num => (
-                  <option key={num} value={num}>
-                    {num}
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            <button type="submit">Book now</button>
-          </Form>
+            <StyledBtn type="submit">Book now</StyledBtn>
+          </FormWrapper>
         );
       }}
     </Formik>

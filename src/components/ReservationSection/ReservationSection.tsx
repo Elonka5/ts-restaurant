@@ -6,7 +6,7 @@ import ReservationForm from '../ReservationForm/ReservationForm';
 
 const ReservationSection = () => {
   return (
-    <ReservationSect>
+    <ReservationSect id="reservations">
       <Container variant="other">
         <ReservWrap>
           <TitleMenu>Make a Reservation</TitleMenu>

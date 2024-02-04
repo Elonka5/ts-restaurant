@@ -14,6 +14,10 @@ export const ReservWrap = styled.div`
   display: flex;
   flex-direction: column;
   gap: 18px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 116px;
+  width: 985px;
 
   p {
     color: ${({ theme }) => theme.colors.grey};

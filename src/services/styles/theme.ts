@@ -5,10 +5,12 @@ export const theme = {
     olive: '#9CAA00',
     lightOlive: '#EBF0E4',
     black: '#000000',
+    secondaryBlack: '#233000',
     grey: '#4D4D4D',
     lightGrey: '#B0B0B0',
     white: '#fff',
     red: '#ef5050',
+    gradient: 'rgba(35, 48, 0, 1)',
   },
 
   spacing: (value: number) => `${4 * value}px`,

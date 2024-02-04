@@ -3,7 +3,11 @@ import { HeaderStyled, Logo } from './HeaderStyled';
 import { ReactComponent as BtnIcon } from '../../assets/images/svg/NaviOpen.svg';
 import { ContainerStyled } from '../Container/ContainerStyled';
 
-const Header = () => {
+interface HeaderProps {
+  scrollToSection: () => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
   return (
     <HeaderStyled>
       <ContainerStyled $variant="header">
@@ -17,7 +21,9 @@ const Header = () => {
         </div>
         <div>
           <Link to="tel:+86852346000">+86 852 346 000</Link>
-          <Link to="/#reservations">Reservations</Link>
+          <a href="#reservations" onClick={scrollToSection}>
+            Reservations
+          </a>
         </div>
         <div>
           <Link to="about">About</Link>

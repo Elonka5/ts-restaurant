@@ -1,29 +1,19 @@
-import { ErrorMessage, Field } from 'formik';
+import { ErrorMessage, Form } from 'formik';
 import styled, { createGlobalStyle } from 'styled-components';
 
 export const StyledDateWrapper = styled.div`
   position: relative;
 `;
-
-export const StyledInput = styled(Field)<{ $error?: string }>`
+export const FormWrapper = styled(Form)`
   display: flex;
-  padding: ${({ theme }) => `${theme.spacing(4)} ${theme.spacing(4.5)}`};
-  justify-content: center;
-  align-items: center;
-  border-radius: ${({ theme }) => theme.radii.button};
-  border: 1px solid
-    ${({ theme, $error }) =>
-      $error ? theme.colors.red : theme.colors.primaryGreen};
+  flex-direction: column;
+  width: 1644px;
+`;
 
-  width: ${({ theme }) => theme.spacing(62)};
-  appearance: none;
-  outline: none;
-
-  ::placeholder {
-    color: ${({ $error, theme }) =>
-      $error ? theme.colors.primaryGreen : theme.colors.red};
-    transition: color 0.3s ease-in-out;
-  }
+export const WrapperInputs = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 46px;
 `;
 
 export const WrapperInput = styled.div`
@@ -40,6 +30,27 @@ export const StyledError = styled(ErrorMessage)`
   font-size: ${({ theme }) => theme.fontSizes.xs};
   line-height: 18px;
   width: ${({ theme }) => theme.spacing(55)};
+`;
+
+export const StyledBtn = styled.button`
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 46px;
+  background-color: ${({ theme }) => theme.colors.primaryBackground};
+  color: ${({ theme }) => theme.colors.white};
+  width: 327px;
+  font-size: 32px;
+  line-height: 48px;
+`;
+
+export const StyledSelect = styled.select`
+  display: flex;
+  padding: 30px 40px;
+  min-width: 1644px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  margin-bottom: 82px;
 `;
 
 export const CalendarGlobalStyles = createGlobalStyle`
