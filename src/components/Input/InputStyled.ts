@@ -33,22 +33,7 @@ export const InputStyled = styled(Field)<InputStyledProps>`
     $variant === 'subscribe' &&
     css`
       min-width: 523px;
+      background-color: inherit;
+      border: 2px solid white;
     `}
 `;
-
-// export const StyledInput = styled(Field)`
-//   display: flex;
-//   padding: ${({ theme }) => `${theme.spacing(4)} ${theme.spacing(4.5)}`};
-//   justify-content: center;
-//   align-items: center;
-//   border: 1px solid
-//     ${({ theme, $error }) =>
-//       $error ? theme.colors.red : theme.colors.primaryGreen};
-//   appearance: none;
-//   outline: none;
-
-//   ::placeholder {
-//     color: ${({ $error, theme }) =>
-//       $error ? theme.colors.primaryGreen : theme.colors.red};
-//     transition: color 0.3s ease-in-out;
-//   }

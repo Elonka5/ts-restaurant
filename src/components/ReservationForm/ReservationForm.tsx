@@ -77,7 +77,7 @@ const ReservationForm: React.FC = () => {
                   id="firstName"
                   name="firstName"
                   placeholder="First Name"
-                  error={errors.firstName && touched.firstName ? 'true' : ''}
+                  $error={errors.firstName && touched.firstName ? 'true' : ''}
                 />
                 <StyledError name="firstName" component="span" />
               </WrapperInput>
@@ -88,7 +88,7 @@ const ReservationForm: React.FC = () => {
                   id="lastName"
                   name="lastName"
                   placeholder="Last Name"
-                  error={errors.lastName && touched.lastName ? 'true' : ''}
+                  $error={errors.lastName && touched.lastName ? 'true' : ''}
                 />
                 <StyledError name="lastName" component="span" />
               </WrapperInput>
@@ -101,7 +101,7 @@ const ReservationForm: React.FC = () => {
                 id="email"
                 name="email"
                 placeholder="Email"
-                error={errors.email && touched.email ? 'true' : ''}
+                $error={errors.email && touched.email ? 'true' : ''}
               />
               <StyledError name="email" component="span" />
             </WrapperInput>
@@ -113,7 +113,7 @@ const ReservationForm: React.FC = () => {
                 id="phone"
                 name="phone"
                 placeholder="Phone"
-                error={errors.phone && touched.phone ? 'true' : ''}
+                $error={errors.phone && touched.phone ? 'true' : ''}
               />
               <StyledError name="phone" component="span" />
             </WrapperInput>

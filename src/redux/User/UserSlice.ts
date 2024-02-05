@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { sendUserReservation } from './UserThunk';
+import { sendUserReservation, sendUserSubscribe } from './UserThunk';
 
 interface UserData {
   isLoading: boolean;
@@ -24,6 +24,16 @@ const userSlice = createSlice({
         state.isLoading = false;
       })
       .addCase(sendUserReservation.rejected, (state, action) => {
+        state.isLoading = false;
+        state.error = action.payload ? action.payload.toString() : null;
+      })
+      .addCase(sendUserSubscribe.pending, state => {
+        state.isLoading = true;
+      })
+      .addCase(sendUserSubscribe.fulfilled, state => {
+        state.isLoading = false;
+      })
+      .addCase(sendUserSubscribe.rejected, (state, action) => {
         state.isLoading = false;
         state.error = action.payload ? action.payload.toString() : null;
       });

@@ -1,7 +1,6 @@
-import {createAsyncThunk } from '@reduxjs/toolkit';
-import {addDoc,collection} from 'firebase/firestore';
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import { addDoc, collection } from 'firebase/firestore';
 import { firestore } from '../../firebase/firebase';
-
 
 export interface UserData {
   firstName: string;
@@ -11,6 +10,10 @@ export interface UserData {
   date: Date;
   time: string;
   numberOfPeople: number;
+}
+
+export interface UserSubscribe {
+  email: string;
 }
 
 export const sendUserReservation = createAsyncThunk<
@@ -26,6 +29,24 @@ export const sendUserReservation = createAsyncThunk<
     await addDoc(usersCollectionRef, userData);
 
     return userData;
+  } catch (error: any) {
+    return rejectWithValue(error.message);
+  }
+});
+
+export const sendUserSubscribe = createAsyncThunk<
+  UserSubscribe,
+  { email: string },
+  { rejectValue: string }
+>('auth/sendUserSubscribe', async (userSubscribe, { rejectWithValue }) => {
+  try {
+    const usersCollectionRef = collection(
+      firestore,
+      '/users/subscribe/restaurant'
+    );
+    await addDoc(usersCollectionRef, userSubscribe);
+
+    return userSubscribe;
   } catch (error: any) {
     return rejectWithValue(error.message);
   }

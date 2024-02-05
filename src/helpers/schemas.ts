@@ -27,3 +27,10 @@ export const validationBooking = yup.object().shape({
       'Phone number must be in format +38(XXX)XXX-XX-XX'
     ),
 });
+
+export const validationSubscribe = yup.object().shape({
+  email: yup
+    .string()
+    .matches(/^[a-zA-Z0-9.~+_-]+@[^\s@]+\.[^\s@]+$/, 'This is an ERROR email')
+    .required('email is required'),
+});
