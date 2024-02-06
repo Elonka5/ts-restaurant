@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkts_restaurant=self.webpackChunkts_restaurant||[]).push([[921],{9921:(s,e,t)=>{t.r(e),t.d(e,{default:()=>r});t(2791);var a=t(184);const r=()=>(0,a.jsx)("div",{children:"Menu"})}}]);
-//# sourceMappingURL=921.22288db9.chunk.js.map
