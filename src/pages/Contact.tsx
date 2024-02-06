@@ -1,7 +1,12 @@
 import React from 'react';
+import ContactHero from '../components/Hero/ContactHero/ContactHero';
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <main>
+      <ContactHero />
+    </main>
+  );
 };
 
 export default Contact;

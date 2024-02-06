@@ -40,3 +40,32 @@ export const FooterTitle = styled.h3`
   font-size: 32px;
   line-height: 48px;
 `;
+
+export const Line = styled.span`
+  display: block;
+  border: 2px dashed white;
+  width: 1920px;
+  height: 0px;
+  margin-top: 137px;
+`;
+
+export const BottomWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 58px;
+
+  p {
+    font-family: 'LatoRegular';
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+  }
+`;
+
+export const LinksList = styled.ul`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 28px;
+`;

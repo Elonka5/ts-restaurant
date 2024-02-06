@@ -19,7 +19,7 @@ export const InputStyled = styled(Field)<InputStyledProps>`
 
   ::placeholder {
     color: ${({ $error, theme }) =>
-      $error ? theme.colors.primaryGreen : theme.colors.red};
+      $error ? theme.colors.black : theme.colors.red};
     transition: color 0.3s ease-in-out;
   }
 
@@ -35,5 +35,6 @@ export const InputStyled = styled(Field)<InputStyledProps>`
       min-width: 523px;
       background-color: inherit;
       border: 2px solid white;
+      color: white;
     `}
 `;

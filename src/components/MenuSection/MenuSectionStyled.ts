@@ -42,13 +42,16 @@ export const ListMenu = styled.ul`
 
   li {
     width: 792px;
-    > *:not(:first-child) {
+    /* > *:not(:first-child) {
       margin-bottom: 24px;
     }
 
     > :first-child {
       margin-bottom: 12px;
     }
+    > :last-child {
+      margin-bottom: 0;
+    } */
   }
 
   h3 {
@@ -83,3 +86,17 @@ export const PriceText = styled.p`
       radial-gradient(grey 15%, transparent 16%);
     background-size: 0.5em 0.5em;
     background-position: 0 0, 0.5em 0.5em; */
+
+export const DottsLine = styled.div`
+  height: 8px;
+  background-image: radial-gradient(black 15%, transparent 16%);
+  background-size: 8px 8px;
+  background-position: 0 0;
+`;
+
+export const SecondTitleMenu = styled.h3`
+  font-size: 68px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 84px;
+`;

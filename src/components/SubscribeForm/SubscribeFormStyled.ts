@@ -1,5 +1,5 @@
-import { Form } from 'formik';
 import styled from 'styled-components';
+import { Form } from 'formik';
 
 export const FormWrapper = styled(Form)`
   display: flex;
@@ -18,5 +18,14 @@ export const FormWrapper = styled(Form)`
     font-weight: 700;
     font-size: 32px;
     line-height: 48px;
+    cursor: pointer;
   }
+`;
+
+export const SubscribeText = styled.p`
+  font-family: 'LatoRegular';
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  /* color: ${({ theme }) => theme.colors.white}; */
 `;

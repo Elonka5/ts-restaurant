@@ -9,7 +9,7 @@ import {
 } from '../ReservationForm/ReservationFormStyled';
 import Input from '../Input/Input';
 import { FooterTitle } from '../Footer/FooterStyled';
-import { FormWrapper } from './SubscribeFormStyled';
+import { FormWrapper, SubscribeText } from './SubscribeFormStyled';
 
 interface SubscribeFormValues {
   email: string;
@@ -61,7 +61,9 @@ const SubscribeForm: React.FC = () => {
           );
         }}
       </Formik>
-      <p>Join our subscribers and get best recipe delivered each week!</p>
+      <SubscribeText>
+        Join our subscribers and get best recipe delivered each week!
+      </SubscribeText>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import Container from '../Container/Container';
 import {
+  DottsLine,
   ListMenu,
   PriceText,
   SectionMenu,
@@ -8,6 +9,7 @@ import {
   TitleMenuWrap,
 } from './MenuSectionStyled';
 import { Text } from '../Hero/HeroStyled';
+import { CardMenu } from '../StartersSection/StartersSectionStyled';
 
 const MenuSection = () => {
   return (
@@ -21,38 +23,38 @@ const MenuSection = () => {
           </Text>
         </TitleMenuWrap>
         <ListMenu>
-          <li>
+          <CardMenu>
             <PriceText>$20</PriceText>
-            <div></div>
+            <DottsLine></DottsLine>
             <h3>Deep Sea Snow White Cod Fillet</h3>
             <Text style={{ color: '#4D4D4D' }}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
             </Text>
-          </li>
-          <li>
+          </CardMenu>
+          <CardMenu>
             <PriceText>$22</PriceText>
-            <div></div>
+            <DottsLine></DottsLine>
             <h3>Steak With Rosemary Butter</h3>
             <Text style={{ color: '#4D4D4D' }}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </Text>
-          </li>
-          <li>
+          </CardMenu>
+          <CardMenu>
             <PriceText>$18</PriceText>
-            <div></div>
+            <DottsLine></DottsLine>
             <h3>Cucumber Salad</h3>
             <Text style={{ color: '#4D4D4D' }}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </Text>
-          </li>
-          <li>
+          </CardMenu>
+          <CardMenu>
             <PriceText>$90</PriceText>
-            <div></div>
+            <DottsLine></DottsLine>
             <h3>Natural Wine Pairing</h3>
             <Text style={{ color: '#4D4D4D' }}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </Text>
-          </li>
+          </CardMenu>
         </ListMenu>
       </Container>
     </SectionMenu>

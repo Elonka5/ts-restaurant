@@ -9,7 +9,7 @@ import TestimonialsSection from '../components/TestimonialsSection/TestimonialsS
 
 const Home = () => {
   return (
-    <div>
+    <main>
       <Hero />
       <MenuSection />
       <Cook />
@@ -18,7 +18,7 @@ const Home = () => {
       <ReservationSection />
       <CategorySection />
       <TestimonialsSection />
-    </div>
+    </main>
   );
 };
 
