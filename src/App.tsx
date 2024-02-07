@@ -10,6 +10,7 @@ const Menu = lazy(() => import('./pages/Menu'));
 const Blogs = lazy(() => import('./pages/Blogs'));
 const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
+const Portfolio = lazy(() => import('./pages/Portfolio'));
 
 function App() {
   return (
@@ -29,6 +30,14 @@ function App() {
             element={
               <PublicRoute>
                 <Menu />
+              </PublicRoute>
+            }
+          />
+          <Route
+            path="portfolio"
+            element={
+              <PublicRoute>
+                <Portfolio />
               </PublicRoute>
             }
           />

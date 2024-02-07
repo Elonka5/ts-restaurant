@@ -39,3 +39,9 @@ export const OpenTime = styled.div`
     width: 143px;
   }
 `;
+
+export const FifthText = styled.p`
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+`;

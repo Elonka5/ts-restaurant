@@ -1,4 +1,5 @@
 import {
+  FifthText,
   HeroMenuSection,
   OpenTime,
   OpenTimeWrap,
@@ -18,7 +19,7 @@ const ContactHero = () => {
         </Text>
         <OpenTimeWrap>
           <TimeWrap>
-            <p>Open Time</p>
+            <FifthText>Open Time</FifthText>
             <p>Sunday - Friday</p>
           </TimeWrap>
           <DottsLine

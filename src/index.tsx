@@ -7,8 +7,8 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './services/styles/theme';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store, { persistedStore } from './redux/store';
-import { PersistGate } from 'redux-persist/integration/react';
+import store from './redux/store';
+// import { PersistGate } from 'redux-persist/integration/react';
 // require('dotenv').config();
 
 const root = ReactDOM.createRoot(
@@ -18,11 +18,11 @@ root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <Provider store={store}>
-        <PersistGate loading={null} persistor={persistedStore}>
-          <BrowserRouter basename="/ts-restaurant">
-            <App />
-          </BrowserRouter>
-        </PersistGate>
+        {/* <PersistGate loading={null} persistor={persistedStore}> */}
+        <BrowserRouter basename="/ts-restaurant">
+          <App />
+        </BrowserRouter>
+        {/* </PersistGate> */}
       </Provider>
     </ThemeProvider>
   </React.StrictMode>
