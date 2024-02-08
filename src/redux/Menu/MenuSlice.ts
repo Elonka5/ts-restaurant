@@ -2,12 +2,14 @@ import { AnyAction, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { fetchMenu, MenuItem } from './MenuThunk';
 
 type Menu = {
+  selectedDish: MenuItem | null;
   menuData: MenuItem[];
   isLoading: boolean;
   error: null | string;
 };
 
 const initialState: Menu = {
+  selectedDish: null,
   menuData: [],
   isLoading: false,
   error: null,
@@ -16,7 +18,11 @@ const initialState: Menu = {
 const menuSlice = createSlice({
   name: 'menu',
   initialState,
-  reducers: {},
+  reducers: {
+    setSelectedDish(state, action: PayloadAction<MenuItem>) {
+      state.selectedDish = action.payload;
+    },
+  },
   extraReducers: builder => {
     builder
       .addCase(fetchMenu.pending, state => {
@@ -25,7 +31,7 @@ const menuSlice = createSlice({
       })
       .addCase(fetchMenu.fulfilled, (state, action) => {
         if (action.payload !== null) {
-          state.menuData = [action.payload];
+          state.menuData = action.payload;
         }
         state.isLoading = false;
       })
@@ -33,41 +39,10 @@ const menuSlice = createSlice({
         state.error = action.payload;
         state.isLoading = false;
       });
-    // .addMatcher(
-    //   (action): action is PayloadAction<{ menuData: string[] }> => {
-    //     return action.type === fetchMenu.fulfilled.type;
-    //   },
-    //   (state, { payload }) => {
-    //     state.isLoading = false;
-    //     state.menuData = payload;
-    //   }
-    // )
-    // .addMatcher(
-    //   (action): action is PayloadAction<string | null> => {
-    //     return action.type === fetchMenu.rejected.type;
-    //   },
-    //   (state, { payload }) => {
-    //     state.isLoading = false;
-    //     state.error = payload || null;
-    //   }
-    // )
-    // .addMatcher(
-    //   (
-    //     action
-    //   ): action is PayloadAction<
-    //     undefined,
-    //     string,
-    //     { arg: void; requestId: string; requestStatus: 'pending' }
-    //   > => {
-    //     return action.type === fetchMenu.pending.type;
-    //   },
-    //   state => {
-    //     state.isLoading = true;
-    //   }
-    // );
   },
 });
 
+export const { setSelectedDish } = menuSlice.actions;
 export const menuReducer = menuSlice.reducer;
 
 function isError(action: AnyAction) {

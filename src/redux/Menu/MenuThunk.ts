@@ -1,9 +1,8 @@
-import { AsyncThunk, createAsyncThunk } from '@reduxjs/toolkit';
+import { createAsyncThunk } from '@reduxjs/toolkit';
 import { DataSnapshot, get, ref } from 'firebase/database';
 import { db } from '../../firebase/firebase';
 
 export type MenuItem = {
-  // menuData: string[];
   id: string;
   title: string;
   imageTitle: string;
@@ -15,21 +14,23 @@ export type MenuItem = {
   };
 };
 
-export const fetchMenu: AsyncThunk<MenuItem | null, void, {}> =
-  createAsyncThunk('menu/fetchMenu', async (_, { rejectWithValue }) => {
-    try {
-      const menuRef = ref(db, 'menu');
+export const fetchMenu = createAsyncThunk<
+  MenuItem[],
+  undefined,
+  { rejectValue: string }
+>('menu/fetchMenu', async function (_, { rejectWithValue }) {
+  try {
+    const menuRef = ref(db, 'menu');
 
-      const snapshot: DataSnapshot = await get(menuRef);
+    const snapshot: DataSnapshot = await get(menuRef);
 
-      if (snapshot.exists()) {
-        const menuData: MenuItem = snapshot.val();
-        console.log(menuData);
-        return menuData;
-      } else {
-        return null;
-      }
-    } catch (error: any) {
-      return rejectWithValue(error.message);
+    if (snapshot.exists()) {
+      const menuData: MenuItem[] = snapshot.val();
+      return menuData;
+    } else {
+      return [];
     }
-  });
+  } catch (error: any) {
+    return rejectWithValue(error.message);
+  }
+});

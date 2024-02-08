@@ -11,6 +11,7 @@ const Blogs = lazy(() => import('./pages/Blogs'));
 const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Portfolio = lazy(() => import('./pages/Portfolio'));
+const DishDetails = lazy(() => import('./pages/DishDetails'));
 
 function App() {
   return (
@@ -38,6 +39,14 @@ function App() {
             element={
               <PublicRoute>
                 <Portfolio />
+              </PublicRoute>
+            }
+          />
+          <Route
+            path="portfolio/:dishId/:dishTitle"
+            element={
+              <PublicRoute>
+                <DishDetails />
               </PublicRoute>
             }
           />
@@ -73,21 +82,3 @@ function App() {
 }
 
 export default App;
-
-//     {
-//       /* <div className="App">
-//   <header className="App-header">
-//     <p>
-//       Edit <code>src/App.tsx</code> and save to reload.
-//     </p>
-//     <a
-//       className="App-link"
-//       href="https://reactjs.org"
-//       target="_blank"
-//       rel="noopener noreferrer"
-//     >
-//       Learn React
-//     </a>
-//   </header>
-// </div> */
-//     }

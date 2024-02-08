@@ -13,7 +13,7 @@ const PortfolioCard: React.FC<PortfolioProps> = ({ dish }) => {
   const { id, imageTitle, title, tags } = dish;
   const tagsString = tags.join(', ');
   return (
-    <li key={id}>
+    <li key={id} style={{ width: '300px' }}>
       <img src={imageTitle} alt="image_title" />
       <h2>{title}</h2>
       <p>{tagsString}</p>

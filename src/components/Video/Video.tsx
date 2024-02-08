@@ -5,6 +5,7 @@ const Video = () => {
     <section>
       <div style={{ padding: '56.25% 0 0 0', position: 'relative' }}>
         <iframe
+          title="Vimeo Video Player"
           src="https://player.vimeo.com/video/355115765?h=2838806a8f"
           style={{
             position: 'absolute',
