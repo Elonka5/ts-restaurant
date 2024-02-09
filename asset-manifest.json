@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/ts-restaurant/static/css/main.5c406a98.css",
-    "main.js": "/ts-restaurant/static/js/main.5d4c6457.js",
-    "static/js/126.91c6c80b.chunk.js": "/ts-restaurant/static/js/126.91c6c80b.chunk.js",
+    "main.js": "/ts-restaurant/static/js/main.31951ee9.js",
+    "static/js/126.042b2081.chunk.js": "/ts-restaurant/static/js/126.042b2081.chunk.js",
     "static/js/247.f74d7dac.chunk.js": "/ts-restaurant/static/js/247.f74d7dac.chunk.js",
     "static/js/558.19bcffe0.chunk.js": "/ts-restaurant/static/js/558.19bcffe0.chunk.js",
     "static/js/134.922541c0.chunk.js": "/ts-restaurant/static/js/134.922541c0.chunk.js",
     "static/js/819.502f4f0f.chunk.js": "/ts-restaurant/static/js/819.502f4f0f.chunk.js",
-    "static/js/382.210432bf.chunk.js": "/ts-restaurant/static/js/382.210432bf.chunk.js",
-    "static/js/490.b29cb4c5.chunk.js": "/ts-restaurant/static/js/490.b29cb4c5.chunk.js",
+    "static/js/67.2982d6c6.chunk.js": "/ts-restaurant/static/js/67.2982d6c6.chunk.js",
+    "static/js/373.c96aa033.chunk.js": "/ts-restaurant/static/js/373.c96aa033.chunk.js",
     "static/js/787.caa874fe.chunk.js": "/ts-restaurant/static/js/787.caa874fe.chunk.js",
     "static/css/44.a6066c1d.chunk.css": "/ts-restaurant/static/css/44.a6066c1d.chunk.css",
     "static/js/44.05febc4a.chunk.js": "/ts-restaurant/static/js/44.05febc4a.chunk.js",
-    "static/js/768.27e7a68b.chunk.js": "/ts-restaurant/static/js/768.27e7a68b.chunk.js",
+    "static/js/768.6bf11020.chunk.js": "/ts-restaurant/static/js/768.6bf11020.chunk.js",
     "static/media/cook.png": "/ts-restaurant/static/media/cook.3f84487be3a9b5963334.png",
     "static/media/menu_background@2x.png": "/ts-restaurant/static/media/menu_background@2x.51f03e85a6c6484356d6.png",
     "static/media/cook_webp@2x.webp": "/ts-restaurant/static/media/cook_webp@2x.a0678895e5f343a842c2.webp",
@@ -127,24 +127,24 @@
     "static/media/comma.svg": "/ts-restaurant/static/media/comma.b1e1263e2091e1cad2430db25b8c7f8b.svg",
     "static/media/Icon_facebook.svg": "/ts-restaurant/static/media/Icon_facebook.bf602fc8eb5c65a002c23782dc9c171b.svg",
     "static/media/Icon_arrow-left.svg": "/ts-restaurant/static/media/Icon_arrow-left.d8b76089b96ae887e6a617f27f1f1f7b.svg",
-    "static/media/Icon_arrow-right.svg": "/ts-restaurant/static/media/Icon_arrow-right.7b64df7503e7bfc4b8b929838ec6db32.svg",
+    "static/media/Icon_arrow-right.svg": "/ts-restaurant/static/media/Icon_arrow-right.0a1f8d3f9ff9b10dae0843102fb9c790.svg",
     "static/media/NaviOpen.svg": "/ts-restaurant/static/media/NaviOpen.fc11dac5885e7715a1d1e9e349a55305.svg",
     "main.5c406a98.css.map": "/ts-restaurant/static/css/main.5c406a98.css.map",
-    "main.5d4c6457.js.map": "/ts-restaurant/static/js/main.5d4c6457.js.map",
-    "126.91c6c80b.chunk.js.map": "/ts-restaurant/static/js/126.91c6c80b.chunk.js.map",
+    "main.31951ee9.js.map": "/ts-restaurant/static/js/main.31951ee9.js.map",
+    "126.042b2081.chunk.js.map": "/ts-restaurant/static/js/126.042b2081.chunk.js.map",
     "247.f74d7dac.chunk.js.map": "/ts-restaurant/static/js/247.f74d7dac.chunk.js.map",
     "558.19bcffe0.chunk.js.map": "/ts-restaurant/static/js/558.19bcffe0.chunk.js.map",
     "134.922541c0.chunk.js.map": "/ts-restaurant/static/js/134.922541c0.chunk.js.map",
     "819.502f4f0f.chunk.js.map": "/ts-restaurant/static/js/819.502f4f0f.chunk.js.map",
-    "382.210432bf.chunk.js.map": "/ts-restaurant/static/js/382.210432bf.chunk.js.map",
-    "490.b29cb4c5.chunk.js.map": "/ts-restaurant/static/js/490.b29cb4c5.chunk.js.map",
+    "67.2982d6c6.chunk.js.map": "/ts-restaurant/static/js/67.2982d6c6.chunk.js.map",
+    "373.c96aa033.chunk.js.map": "/ts-restaurant/static/js/373.c96aa033.chunk.js.map",
     "787.caa874fe.chunk.js.map": "/ts-restaurant/static/js/787.caa874fe.chunk.js.map",
     "44.a6066c1d.chunk.css.map": "/ts-restaurant/static/css/44.a6066c1d.chunk.css.map",
     "44.05febc4a.chunk.js.map": "/ts-restaurant/static/js/44.05febc4a.chunk.js.map",
-    "768.27e7a68b.chunk.js.map": "/ts-restaurant/static/js/768.27e7a68b.chunk.js.map"
+    "768.6bf11020.chunk.js.map": "/ts-restaurant/static/js/768.6bf11020.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c406a98.css",
-    "static/js/main.5d4c6457.js"
+    "static/js/main.31951ee9.js"
   ]
 }
