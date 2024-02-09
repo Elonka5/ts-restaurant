@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
-import { PortfolioContainer } from './PortfolioListStyled';
+import { PortfolioContainer, PortfolioSection } from './PortfolioListStyled';
 import PortfolioCard from '../PortfolioCard/PortfolioCard';
 import { useAppDispatch, useAppSelector } from '../../../hook';
 import { MenuItem, fetchMenu } from '../../../redux/Menu/MenuThunk';
-import { Link } from 'react-router-dom';
-import { setSelectedDish } from '../../../redux/Menu/MenuSlice';
+import Container from '../../Container/Container';
 
 const PortfolioList: React.FC = () => {
   const dishes = useAppSelector(state => state.menu.menuData);
-  console.log(dishes);
   const [selectedTag, setSelectedTag] = useState('All');
-  console.log(dishes);
+
   const dispatch = useAppDispatch();
 
   React.useEffect(() => {
@@ -21,41 +19,100 @@ const PortfolioList: React.FC = () => {
     return selectedTag === 'All' || dish.tags.includes(selectedTag);
   });
 
-  const handleDishClick = (dish: MenuItem) => {
-    localStorage.setItem('selectedDish', JSON.stringify(dish));
-    dispatch(setSelectedDish(dish));
-  };
-
   return (
-    <div>
-      <div>
-        {[
-          'All',
-          'Starter',
-          'Launch',
-          'Dinner',
-          'Drinks',
-          'Sweets',
-          'Fruits',
-        ].map(tag => (
-          <button key={tag} onClick={() => setSelectedTag(tag)}>
-            {tag}
-          </button>
-        ))}
-      </div>
-      <PortfolioContainer>
-        {filteredDishes.map((dish: any, index: number) => (
-          <Link
-            key={index}
-            to={`/portfolio/${dish.id}/${encodeURIComponent(dish.title)}`}
-            onClick={() => handleDishClick(dish)}
-          >
-            <PortfolioCard dish={dish} />
-          </Link>
-        ))}
-      </PortfolioContainer>
-    </div>
+    <PortfolioSection>
+      <Container variant="other">
+        <div>
+          {[
+            'All',
+            'Starter',
+            'Launch',
+            'Dinner',
+            'Drinks',
+            'Sweets',
+            'Fruits',
+          ].map(tag => (
+            <button key={tag} onClick={() => setSelectedTag(tag)}>
+              {tag}
+            </button>
+          ))}
+        </div>
+        <PortfolioContainer>
+          {filteredDishes.map((dish: any, index: number) => (
+            <PortfolioCard
+              key={dish.id}
+              dish={dish}
+              idx={index}
+              onDishClick={(dish: MenuItem, idx: number) =>
+                console.log('Selected index:', idx)
+              }
+            />
+          ))}
+        </PortfolioContainer>
+      </Container>
+    </PortfolioSection>
   );
 };
 
 export default PortfolioList;
+
+// import React, { useState } from 'react';
+// import { PortfolioContainer, PortfolioSection } from './PortfolioListStyled';
+// import PortfolioCard from '../PortfolioCard/PortfolioCard';
+// import { useAppDispatch, useAppSelector } from '../../../hook';
+// import { MenuItem, fetchMenu } from '../../../redux/Menu/MenuThunk';
+// import Container from '../../Container/Container';
+
+// const PortfolioList: React.FC = () => {
+//   const dishes = useAppSelector(state => state.menu.menuData);
+//   const [selectedTag, setSelectedTag] = useState('All');
+
+//   const dispatch = useAppDispatch();
+
+//   React.useEffect(() => {
+//     dispatch(fetchMenu());
+//   }, [dispatch]);
+
+//   const filteredDishes = dishes.filter(dish => {
+//     return selectedTag === 'All' || dish.tags.includes(selectedTag);
+//   });
+
+//   const handleDishClick = (idx: number) => {
+//     console.log('Selected index:', idx);
+//     // Тут можна виконати додаткову логіку для відображення детальної інформації про блюдо
+//   };
+
+//   return (
+//     <PortfolioSection>
+//       <Container variant="other">
+//         <div>
+//           {[
+//             'All',
+//             'Starter',
+//             'Launch',
+//             'Dinner',
+//             'Drinks',
+//             'Sweets',
+//             'Fruits',
+//           ].map(tag => (
+//             <button key={tag} onClick={() => setSelectedTag(tag)}>
+//               {tag}
+//             </button>
+//           ))}
+//         </div>
+//         <PortfolioContainer>
+//           {filteredDishes.map((dish: MenuItem, index: number) => (
+//             <PortfolioCard
+//               key={dish.id}
+//               dish={dish}
+//               idx={index}
+//               onDishClick={handleDishClick}
+//             />
+//           ))}
+//         </PortfolioContainer>
+//       </Container>
+//     </PortfolioSection>
+//   );
+// };
+
+// export default PortfolioList;

@@ -57,7 +57,7 @@ const TestimonialsSection = () => {
               </Text>
               <button onClick={nextCard}>
                 <span>
-                  <ArrowRight />
+                  <ArrowRight fill="#233000" />
                 </span>
               </button>
             </WrapperBtn>

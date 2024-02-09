@@ -2,10 +2,11 @@ import React from 'react';
 import { SectionSinglePortfolio } from './SinglePortfolioHeroStyled';
 import Container from '../../Container/Container';
 import { Title } from '../HeroStyled';
+import { MenuItem } from '../../../redux/Menu/MenuThunk';
 
-export type SinglePortfolioProps = {
-  dishData: any;
-};
+export interface SinglePortfolioProps {
+  dishData: MenuItem;
+}
 
 const SinglePortfolioHero: React.FC<SinglePortfolioProps> = ({ dishData }) => {
   return (

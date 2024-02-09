@@ -4,6 +4,7 @@ import { fetchMenu, MenuItem } from './MenuThunk';
 type Menu = {
   selectedDish: MenuItem | null;
   menuData: MenuItem[];
+  currentDishIndex: number;
   isLoading: boolean;
   error: null | string;
 };
@@ -11,6 +12,7 @@ type Menu = {
 const initialState: Menu = {
   selectedDish: null,
   menuData: [],
+  currentDishIndex: 0,
   isLoading: false,
   error: null,
 };
@@ -21,6 +23,9 @@ const menuSlice = createSlice({
   reducers: {
     setSelectedDish(state, action: PayloadAction<MenuItem>) {
       state.selectedDish = action.payload;
+    },
+    setCurrentDishIndex(state, action: PayloadAction<number>) {
+      state.currentDishIndex = action.payload;
     },
   },
   extraReducers: builder => {
@@ -42,7 +47,7 @@ const menuSlice = createSlice({
   },
 });
 
-export const { setSelectedDish } = menuSlice.actions;
+export const { setSelectedDish, setCurrentDishIndex } = menuSlice.actions;
 export const menuReducer = menuSlice.reducer;
 
 function isError(action: AnyAction) {

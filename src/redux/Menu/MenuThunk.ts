@@ -7,11 +7,11 @@ export type MenuItem = {
   title: string;
   imageTitle: string;
   tags: string[];
-  description: {
+  description?: {
     title: string;
     dish_info: string[];
     image: string;
-  };
+  }[];
 };
 
 export const fetchMenu = createAsyncThunk<
