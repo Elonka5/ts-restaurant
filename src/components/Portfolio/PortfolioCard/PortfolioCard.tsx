@@ -12,12 +12,7 @@ import {
 import { ReactComponent as ArrowRight } from '../../../assets/images/svg/Icon_arrow-right.svg';
 
 interface PortfolioProps {
-  dish: {
-    id: string;
-    imageTitle: string;
-    title: string;
-    tags: string[];
-  };
+  dish: MenuItem;
   idx: number;
   onDishClick: (dish: MenuItem, idx: number) => void;
 }
@@ -35,6 +30,7 @@ const PortfolioCard: React.FC<PortfolioProps> = ({
     console.log('Selected index:', idx);
     const selectedDishWithIndex = { ...dish, index: idx };
     localStorage.setItem('selectedDish', JSON.stringify(selectedDishWithIndex));
+    console.log(selectedDishWithIndex);
     dispatch(setSelectedDish(selectedDishWithIndex));
     onDishClick(dish, idx);
   };

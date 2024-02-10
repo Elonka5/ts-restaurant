@@ -26,6 +26,12 @@ export const FirstDishInfoWrap = styled.div`
 export const FirstImgWrap = styled.div`
   z-index: 1;
   position: relative;
+
+  img {
+    width: 486px;
+    height: 678px;
+    object-fit: cover;
+  }
 `;
 
 export const SecondDescrContainer = styled.div`
@@ -77,5 +83,21 @@ export const ThirdDishInfoWrap = styled.div`
 
   :nth-child(3) {
     margin-bottom: 122px;
+  }
+`;
+
+export const SecondImgWrap = styled.div`
+  img {
+    width: 822px;
+    height: 903px;
+    object-fit: cover;
+  }
+`;
+
+export const ThirdImgWrap = styled.div`
+  img {
+    width: 1360px;
+    height: 756px;
+    object-fit: cover;
   }
 `;

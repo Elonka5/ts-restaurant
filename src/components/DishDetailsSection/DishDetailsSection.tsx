@@ -6,6 +6,7 @@ import {
   FirstImgWrap,
   SecondDescrContainer,
   SecondDishInfoWrap,
+  SecondImgWrap,
   SectionDetailsDish,
   ThirdDescrContainer,
   ThirdDishInfoWrap,
@@ -29,9 +30,9 @@ const DishDetailsSection: React.FC<SinglePortfolioProps> = ({ dishData }) => {
           </FirstDishInfoWrap>
         </FirstDescrContainer>
         <SecondDescrContainer>
-          <div>
+          <SecondImgWrap>
             <img src={dishData.description?.[0].image} alt="element" />
-          </div>
+          </SecondImgWrap>
           <SecondDishInfoWrap>
             <TitleDetails>{dishData.description?.[1].title}</TitleDetails>
             <Text>{dishData.description?.[1].dish_info[0]}</Text>
@@ -44,7 +45,11 @@ const DishDetailsSection: React.FC<SinglePortfolioProps> = ({ dishData }) => {
               <TitleDetails>{dishData.description?.[2].title}</TitleDetails>
               <Text>{dishData.description?.[2].dish_info[1]}</Text>
             </ThirdDishInfoWrap>
-            <img src={dishData.description?.[2]?.image} alt="element" />
+            <img
+              src={dishData.description?.[2]?.image}
+              alt="element"
+              style={{ height: '756px', objectFit: 'cover' }}
+            />
           </div>
         </ThirdDescrContainer>
       </Container>
