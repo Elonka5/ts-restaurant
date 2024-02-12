@@ -27,7 +27,7 @@ const Header: React.FC<HeaderProps> = ({ scrollToSection }) => {
         </div>
         <div>
           <Link to="about">About</Link>
-          <Link to="blogs">Blogs</Link>
+          <Link to="blog">Blogs</Link>
           <Link to="contact">Contact</Link>
           <Link to="menu">Menu</Link>
           <Link to="portfolio">Portfolio</Link>

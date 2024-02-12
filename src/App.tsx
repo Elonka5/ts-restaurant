@@ -7,11 +7,12 @@ import PublicRoute from './components/Routes/PublicRoute';
 
 const Home = lazy(() => import('./pages/Home'));
 const Menu = lazy(() => import('./pages/Menu'));
-const Blogs = lazy(() => import('./pages/Blogs'));
+const Blog = lazy(() => import('./pages/Blog'));
 const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Portfolio = lazy(() => import('./pages/Portfolio'));
 const DishDetails = lazy(() => import('./pages/DishDetails'));
+const BlogDetails = lazy(() => import('./pages/BlogDetails'));
 
 function App() {
   return (
@@ -51,10 +52,18 @@ function App() {
             }
           />
           <Route
-            path="blogs"
+            path="blog"
             element={
               <PublicRoute>
-                <Blogs />
+                <Blog />
+              </PublicRoute>
+            }
+          />
+          <Route
+            path="blog/:blogId/:blogTitle"
+            element={
+              <PublicRoute>
+                <BlogDetails />
               </PublicRoute>
             }
           />

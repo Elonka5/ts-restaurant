@@ -16,6 +16,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { usersReducer } from './User/UserSlice';
 import { menuReducer } from './Menu/MenuSlice';
+import { blogReducer } from './Blogs/BlogsSlice';
 
 // const persistUserConfig = {
 //   key: 'root',
@@ -48,6 +49,7 @@ const store = configureStore({
   reducer: {
     user: usersReducer,
     menu: menuReducer,
+    blog: blogReducer,
   },
 });
 
