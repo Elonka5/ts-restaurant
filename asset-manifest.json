@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/ts-restaurant/static/css/main.5c406a98.css",
-    "main.js": "/ts-restaurant/static/js/main.931474a7.js",
+    "main.js": "/ts-restaurant/static/js/main.0661ad2d.js",
     "static/js/935.5f1cb6d2.chunk.js": "/ts-restaurant/static/js/935.5f1cb6d2.chunk.js",
     "static/js/247.f74d7dac.chunk.js": "/ts-restaurant/static/js/247.f74d7dac.chunk.js",
-    "static/js/558.19bcffe0.chunk.js": "/ts-restaurant/static/js/558.19bcffe0.chunk.js",
+    "static/js/565.0214ff66.chunk.js": "/ts-restaurant/static/js/565.0214ff66.chunk.js",
     "static/js/134.922541c0.chunk.js": "/ts-restaurant/static/js/134.922541c0.chunk.js",
     "static/js/819.502f4f0f.chunk.js": "/ts-restaurant/static/js/819.502f4f0f.chunk.js",
     "static/js/67.f6d2a9ea.chunk.js": "/ts-restaurant/static/js/67.f6d2a9ea.chunk.js",
     "static/js/497.4fd7af9e.chunk.js": "/ts-restaurant/static/js/497.4fd7af9e.chunk.js",
+    "static/js/33.bde98b6f.chunk.js": "/ts-restaurant/static/js/33.bde98b6f.chunk.js",
     "static/js/787.caa874fe.chunk.js": "/ts-restaurant/static/js/787.caa874fe.chunk.js",
     "static/css/44.a6066c1d.chunk.css": "/ts-restaurant/static/css/44.a6066c1d.chunk.css",
     "static/js/44.05febc4a.chunk.js": "/ts-restaurant/static/js/44.05febc4a.chunk.js",
@@ -41,6 +42,7 @@
     "static/media/fruit_on_table@2x.jpg": "/ts-restaurant/static/media/fruit_on_table@2x.b34c4c29e5fffb62cad2.jpg",
     "static/media/pasta_Image@2x.jpg": "/ts-restaurant/static/media/pasta_Image@2x.3a74332196331fbb8d16.jpg",
     "static/media/hero_portfolio.jpg": "/ts-restaurant/static/media/hero_portfolio.758a48f473f651b4159f.jpg",
+    "static/media/hero_blogs.jpg": "/ts-restaurant/static/media/hero_blogs.1a5d453d08345186166a.jpg",
     "static/media/hero_img@2x.jpg": "/ts-restaurant/static/media/hero_img@2x.0298e117a49cd5c1cc9c.jpg",
     "static/media/steak_img_webp@2x.webp": "/ts-restaurant/static/media/steak_img_webp@2x.92fc48ac01c4f495f240.webp",
     "static/media/photo_restaurant_webp.webp": "/ts-restaurant/static/media/photo_restaurant_webp.4f8cf83aac3523006745.webp",
@@ -131,14 +133,15 @@
     "static/media/Icon_arrow-right.svg": "/ts-restaurant/static/media/Icon_arrow-right.0a1f8d3f9ff9b10dae0843102fb9c790.svg",
     "static/media/NaviOpen.svg": "/ts-restaurant/static/media/NaviOpen.fc11dac5885e7715a1d1e9e349a55305.svg",
     "main.5c406a98.css.map": "/ts-restaurant/static/css/main.5c406a98.css.map",
-    "main.931474a7.js.map": "/ts-restaurant/static/js/main.931474a7.js.map",
+    "main.0661ad2d.js.map": "/ts-restaurant/static/js/main.0661ad2d.js.map",
     "935.5f1cb6d2.chunk.js.map": "/ts-restaurant/static/js/935.5f1cb6d2.chunk.js.map",
     "247.f74d7dac.chunk.js.map": "/ts-restaurant/static/js/247.f74d7dac.chunk.js.map",
-    "558.19bcffe0.chunk.js.map": "/ts-restaurant/static/js/558.19bcffe0.chunk.js.map",
+    "565.0214ff66.chunk.js.map": "/ts-restaurant/static/js/565.0214ff66.chunk.js.map",
     "134.922541c0.chunk.js.map": "/ts-restaurant/static/js/134.922541c0.chunk.js.map",
     "819.502f4f0f.chunk.js.map": "/ts-restaurant/static/js/819.502f4f0f.chunk.js.map",
     "67.f6d2a9ea.chunk.js.map": "/ts-restaurant/static/js/67.f6d2a9ea.chunk.js.map",
     "497.4fd7af9e.chunk.js.map": "/ts-restaurant/static/js/497.4fd7af9e.chunk.js.map",
+    "33.bde98b6f.chunk.js.map": "/ts-restaurant/static/js/33.bde98b6f.chunk.js.map",
     "787.caa874fe.chunk.js.map": "/ts-restaurant/static/js/787.caa874fe.chunk.js.map",
     "44.a6066c1d.chunk.css.map": "/ts-restaurant/static/css/44.a6066c1d.chunk.css.map",
     "44.05febc4a.chunk.js.map": "/ts-restaurant/static/js/44.05febc4a.chunk.js.map",
@@ -146,6 +149,6 @@
   },
   "entrypoints": [
     "static/css/main.5c406a98.css",
-    "static/js/main.931474a7.js"
+    "static/js/main.0661ad2d.js"
   ]
 }
