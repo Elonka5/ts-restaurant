@@ -11,6 +11,7 @@ const DishDetails: React.FC = () => {
   const dispatch = useAppDispatch();
   const dishes = useAppSelector(state => state.menu.menuData);
   const [dishData, setDishData] = useState<any>(null);
+  console.log(dishData);
   const [currentDishIndex, setCurrentDishIndex] = useState(0);
 
   useEffect(() => {

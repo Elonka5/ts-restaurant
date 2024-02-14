@@ -10,6 +10,6 @@ export const SectionBlogsPortfolio = styled.section`
   padding-top: 142px;
   padding-bottom: 130px;
   width: 100%;
-  height: 1080px;
+  height: 850px;
   color: ${({ theme }) => theme.colors.white};
 `;
